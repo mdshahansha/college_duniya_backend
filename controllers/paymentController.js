@@ -285,8 +285,24 @@ export const paymentCancel=async (req,res)=>{
  
 
 
+
+
 export const applicationAcknowledgment =async (req,res)=>{
     //todo
+    const {paymentId}=req.params;
+    try {
+        // Find the payment document based on paymentID and userID
+        const payment = await Payment.findOne({ _id: paymentId});
+
+        if (!payment) {
+            return res.status(404).json({ success: false, error: 'Payment not found or does not belong to the specified user' });
+        }
+
+        // If payment is found and belongs to the user, return the payment data
+        res.status(200).json({ success: true, data: payment });
+    } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+    }
 }
 
 

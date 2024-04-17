@@ -22,7 +22,8 @@ paymentRouter.get('/:paymentId',  renderProductPage);
 paymentRouter.post('/payment-callback', paymentCallBack)
 paymentRouter.get('/payment-cancel', paymentCancel)
 
-paymentRouter.get('/applicationAcknowledgment', applicationAcknowledgment)
+// paymentRouter.get('/applicationAcknowledgment', applicationAcknowledgment)
+paymentRouter.get('/applicationAcknowledgment/:paymentId', applicationAcknowledgment)
 
 
 export default paymentRouter;
