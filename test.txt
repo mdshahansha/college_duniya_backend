@@ -1,0 +1,21 @@
+6613e08e36061f7c9706961b collegeId
+6612ebd869933c2a6d839bb2 collegeID 2nd
+
+661f9ca710350cb186c7fc86 -> paymentID
+
+1  GETScholarFilter->city or array of city
+ 2 GETScholarFilter->courses or array of courses
+ 3 GETScholarFilter->Meribased or array of Meribased
+ 4 GETScholarFilter->CollegeOffered or array of CollegeOffered
+ 5 GETScholarFilter->inComeBased or array of inComeBased
+ 6 GETScholarFilter->genderBased or array of genderBased
+ 7 GETScholarFilter->courses or array of courses
+8 combined all above api in muiltiple filter paramters with simultanesuly
+9 GET College Preditor
+10  commonApplicatioFilter-> city or array of city
+11 commonApplicatioFilter-> stream or array of stream
+12  commonApplicatioFilter-> level or array of level
+13   commonApplicatioFilter-> degreeType or array of degreeType
+14 combined all above api in muiltiple filter paramters with simultanesuly 11 12 13 10
+15 make pagination api where, Send paginated results to the client with limit 20 and totcal count of college in database 
+
